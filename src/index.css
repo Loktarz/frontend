@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #f5f5f5; color: #1a1a1a; }
+}
+
+@layer components {
+  /* Primary green button — wiki.tn style */
+  .btn-green {
+    @apply bg-[#3ab54a] hover:bg-[#2e9440] text-white font-semibold px-6 py-3 rounded-md transition-all duration-200 inline-block;
+  }
+  /* Dark outline button */
+  .btn-dark {
+    @apply bg-[#1a1a1a] hover:bg-[#333] text-white font-semibold px-6 py-3 rounded-md transition-all duration-200 inline-block;
+  }
+  /* Ghost button with green border */
+  .btn-outline-green {
+    @apply border-2 border-[#3ab54a] text-[#3ab54a] hover:bg-[#3ab54a] hover:text-white font-semibold px-6 py-3 rounded-md transition-all duration-200 inline-block;
+  }
+  /* Card */
+  .card {
+    @apply bg-white rounded-lg shadow-card p-6 border border-gray-100 hover:border-[#3ab54a] hover:shadow-md transition-all duration-200;
+  }
+  /* Input */
+  .input-field {
+    @apply w-full border border-gray-300 rounded-md px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#3ab54a] focus:border-[#3ab54a] transition bg-white;
+  }
+  /* Section padding */
+  .section { @apply py-14 px-4; }
+  .container-main { @apply max-w-6xl mx-auto; }
+
+  /* Green badge */
+  .badge-green {
+    @apply inline-block bg-[#e8f5eb] text-[#1d6b2e] text-xs font-semibold px-3 py-1 rounded-full;
+  }
+}
