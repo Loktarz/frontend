@@ -21,7 +21,8 @@ export default function Register() {
     if (form.password.length < 6) { setError('Le mot de passe doit contenir au moins 6 caractères.'); return }
     setLoading(true)
     try {
-      const res = await axios.post('/api/auth/register', {
+      const BASE = import.meta.env.VITE_API_URL || ''
+      const res = await axios.post(`${BASE}/api/auth/register`, {
         fullName: form.fullName,
         email:    form.email,
         phone:    form.phone,
