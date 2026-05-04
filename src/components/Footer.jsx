@@ -58,7 +58,7 @@ export default function Footer() {
                 <span className="mt-0.5">📍</span> Tunis, Tunisie
               </li>
               <li className="flex items-start gap-2">
-                <span className="mt-0.5">📞</span> +216 XX XXX XXX
+                <span className="mt-0.5">📞</span> +216 22 414 444
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5">✉️</span> contact@wikirepair.tn
